@@ -1,3 +1,16 @@
+# Reproducing [Issue #14 ](https://github.com/buelowp/sunset/issues/14)
+
+Compile this repo with PlatformIO and compilation will fail with numerous errors due to Arduino max() and min() definitions
+
+If lines 31 and 32 are uncommented in sunset.h, the repo compiles fine
+
+# Building with platformio
+
+platformio run
+
+
+# Original documentation below
+
 # Calculate Sunrise and Sunset based on time and latitude and longitude</h1>
 This is a modification of the sunrise.c posted by Mike Chirico back in 2004. See the link below to find it. I needed an algorithm that could tell me when it was dark out for all intents and purposes. I found Mike’s code, and modified it a bit to be a library that can be used again and again.
 
